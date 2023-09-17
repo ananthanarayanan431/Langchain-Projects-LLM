@@ -1,1 +1,28 @@
 
+LangChain is an open-source Python library that enables anyone who can write code to build LLM-powered applications. It provides a generic interface to many foundation models, enables prompt management, and acts as a central interface to other components like prompt templates, other LLMs, external data, and other tools via agents.
+
+Basics of LangChain:
+
+Components: LangChain applications are composed of different components, such as:
+
+LLMs: Large language models, such as GPT-3, BLOOM, and Flan-T5.
+Prompt templates: Templates for different types of prompts, such as chatbot-style templates, ELI5 question-answering, and summarization.
+
+Agents: Agents use LLMs to decide what actions to take.
+
+Chains: Chains are sequences of components that are executed in order. For example, a summarization chain might consist of the following components:
+
+A prompt template that generates a prompt for the LLM.
+The LLM, which generates the summary.
+A post-processing agent, which cleans up the summary and makes it more readable.
+Running chains: To run a chain, you simply call the chain.run() method. The chain will then execute each of its components in order and return the output of the last component.
+
+Use cases:
+
+LangChain can be used to build a variety of applications, such as:
+
+1. Chatbots
+2. Question-answering systems
+3. Summarization systems
+4. Code generation systems
+5. Creative text generation systems
